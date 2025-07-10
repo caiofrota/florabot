@@ -31,7 +31,7 @@ Data is published to MQTT, then the ESP enters **deep sleep** for 2 hours to sav
 
 ## 🖼️ Wiring Diagram
 
-![Wiring Diagram](./florabot.bb)
+![Wiring Diagram](./florabot_bb.jpg)
 
 ---
 
@@ -42,7 +42,7 @@ Topic | Type | Description
 `home/plants/1/moisture` | Integer (raw) | Soil moisture
 `home/plants/1/battery`  | Integer (%) | Battery level
 `home/plants/1/humidity` | Float (%) | Air humidity (DHT22)
-`home/plants/1/temperatur| Float (°C) | Air temperature (DHT22)
+`home/plants/1/temperature` | Float (°C) | Air temperature (DHT22)
 
 ---
 
@@ -63,6 +63,8 @@ Topic | Type | Description
 
 ## 🛠️ To-Do
 
+- [x] Add battery percent level
+- [x] Add humidity and temperature sensor (DHT)
 - [ ] Add battery charging status
 
 ---
